@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pc_sales (P1-PersonalVehicleSalesGlobal)' inline='true' name='federated.1jvj4df04ggd3s1c554bl09gk2ge' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P1-PersonalVehicleSalesGlobal' name='excel-direct.0hgbabl0wnr3lh1asbzwl1rs3bng'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='F:/UNT_Classes/Semester-4/Scientific Data Visualization/In-class Activities/14/P1-PersonalVehicleSalesGlobal.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[2011]' />
+            <value name='[2012]' />
+            <value name='[2013]' />
+            <value name='[2014]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[pc_sales].[2005]' />
+              <field name='[pc_sales].[2006]' />
+              <field name='[pc_sales].[2007]' />
+              <field name='[pc_sales].[2008]' />
+              <field name='[pc_sales].[2009]' />
+              <field name='[pc_sales].[2010]' />
+              <field name='[pc_sales].[2011]' />
+              <field name='[pc_sales].[2012]' />
+              <field name='[pc_sales].[2013]' />
+              <field name='[pc_sales].[2014]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.0hgbabl0wnr3lh1asbzwl1rs3bng' name='pc_sales' table='[pc_sales$]' type='table'>
+            <columns gridOrigin='A2:O150:no:A2:O150:1' header='yes' lost='0' outcome='1' processed='1441'>
+              <column datatype='string' name='REGIONS' ordinal='0' />
+              <column datatype='string' name='COUNTRIES' ordinal='1' />
+              <column datatype='real' name='F3' ordinal='2' />
+              <column datatype='real' name='F4' ordinal='3' />
+              <column datatype='integer' name='F5' ordinal='4' />
+              <column datatype='integer' name='2005' ordinal='5' />
+              <column datatype='integer' name='2006' ordinal='6' />
+              <column datatype='integer' name='2007' ordinal='7' />
+              <column datatype='integer' name='2008' ordinal='8' />
+              <column datatype='integer' name='2009' ordinal='9' />
+              <column datatype='integer' name='2010' ordinal='10' />
+              <column datatype='integer' name='2011' ordinal='11' />
+              <column datatype='integer' name='2012' ordinal='12' />
+              <column datatype='integer' name='2013' ordinal='13' />
+              <column datatype='integer' name='2014' ordinal='14' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pc_sales]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A2:O150:no:A2:O150:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>1441</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGIONS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[REGIONS]</local-name>
+            <parent-name>[pc_sales]</parent-name>
+            <remote-alias>REGIONS</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRIES</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRIES]</local-name>
+            <parent-name>[pc_sales]</parent-name>
+            <remote-alias>COUNTRIES</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[pc_sales]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[pc_sales]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[pc_sales]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[COUNTRIES]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' hidden='true' name='[F3]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F4]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[F5]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Car Sold' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='pc_sales' datatype='table' name='[__tableau_internal_object_id__].[pc!sales_67AA3A10A89146BEB63742F895AC6182]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_02o3zy21gxa69o133zgqr0zsv6cc.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/03/2024 06:46:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>REGIONS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[REGIONS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REGIONS</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pc_sales</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNTRIES</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRIES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRIES</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pc_sales</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>817</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pc!sales_67AA3A10A89146BEB63742F895AC6182]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='pc_sales' id='pc!sales_67AA3A10A89146BEB63742F895AC6182'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2005]' />
+                  <value name='[2006]' />
+                  <value name='[2007]' />
+                  <value name='[2008]' />
+                  <value name='[2009]' />
+                  <value name='[2010]' />
+                  <value name='[2011]' />
+                  <value name='[2012]' />
+                  <value name='[2013]' />
+                  <value name='[2014]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[pc_sales].[2005]' />
+                    <field name='[pc_sales].[2006]' />
+                    <field name='[pc_sales].[2007]' />
+                    <field name='[pc_sales].[2008]' />
+                    <field name='[pc_sales].[2009]' />
+                    <field name='[pc_sales].[2010]' />
+                    <field name='[pc_sales].[2011]' />
+                    <field name='[pc_sales].[2012]' />
+                    <field name='[pc_sales].[2013]' />
+                    <field name='[pc_sales].[2014]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.0hgbabl0wnr3lh1asbzwl1rs3bng' name='pc_sales' table='[pc_sales$]' type='table'>
+                  <columns gridOrigin='A2:O150:no:A2:O150:1' header='yes' lost='0' outcome='1' processed='1441'>
+                    <column datatype='string' name='REGIONS' ordinal='0' />
+                    <column datatype='string' name='COUNTRIES' ordinal='1' />
+                    <column datatype='real' name='F3' ordinal='2' />
+                    <column datatype='real' name='F4' ordinal='3' />
+                    <column datatype='integer' name='F5' ordinal='4' />
+                    <column datatype='integer' name='2005' ordinal='5' />
+                    <column datatype='integer' name='2006' ordinal='6' />
+                    <column datatype='integer' name='2007' ordinal='7' />
+                    <column datatype='integer' name='2008' ordinal='8' />
+                    <column datatype='integer' name='2009' ordinal='9' />
+                    <column datatype='integer' name='2010' ordinal='10' />
+                    <column datatype='integer' name='2011' ordinal='11' />
+                    <column datatype='integer' name='2012' ordinal='12' />
+                    <column datatype='integer' name='2013' ordinal='13' />
+                    <column datatype='integer' name='2014' ordinal='14' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pc_sales (P1-PersonalVehicleSalesGlobal)' name='federated.1jvj4df04ggd3s1c554bl09gk2ge' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jvj4df04ggd3s1c554bl09gk2ge'>
+            <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Car Sold' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jvj4df04ggd3s1c554bl09gk2ge].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.1jvj4df04ggd3s1c554bl09gk2ge].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{FAC13F17-37D1-46C8-ACF6-F3B84F822749}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1jvj4df04ggd3s1c554bl09gk2ge].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9BC0A898-6C6A-4818-A562-43D7C5218642}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
