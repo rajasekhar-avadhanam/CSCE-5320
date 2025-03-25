@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Book3_17315578457840' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Plastic Waste Around the World' inline='true' name='federated.1gct2pb1gaovkt1a0wtvp0evfx5m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Plastic Waste Around the World' name='textscan.0xfjbkj03olh2z1626yts0ebvi9e'>
+            <connection class='textscan' directory='F:/UNT_Classes/Semester-4/Scientific Data Visualization/Projects/4' filename='Plastic Waste Around the World.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0xfjbkj03olh2z1626yts0ebvi9e' name='Plastic Waste Around the World.csv' table='[Plastic Waste Around the World#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='real' name='Total_Plastic_Waste_MT' ordinal='1' />
+            <column datatype='string' name='Main_Sources' ordinal='2' />
+            <column datatype='real' name='Recycling_Rate' ordinal='3' />
+            <column datatype='real' name='Per_Capita_Waste_KG' ordinal='4' />
+            <column datatype='string' name='Coastal_Waste_Risk' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Plastic_Waste_MT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Plastic_Waste_MT]</local-name>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias>Total_Plastic_Waste_MT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Main_Sources</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Main_Sources]</local-name>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias>Main_Sources</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recycling_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Recycling_Rate]</local-name>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias>Recycling_Rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Per_Capita_Waste_KG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Per_Capita_Waste_KG]</local-name>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias>Per_Capita_Waste_KG</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coastal_Waste_Risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Coastal_Waste_Risk]</local-name>
+            <parent-name>[Plastic Waste Around the World.csv]</parent-name>
+            <remote-alias>Coastal_Waste_Risk</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Non-Recycled Plastic Waste' datatype='real' name='[Calculation_1019220905017339904]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total_Plastic_Waste_MT] - (([Total_Plastic_Waste_MT] * [Recycling_Rate])/100)' />
+      </column>
+      <column caption='Waste Rate' datatype='real' name='[Calculation_1019220905018626049]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100 - [Recycling_Rate]' />
+      </column>
+      <column caption='Coastal Waste Risk' datatype='string' name='[Coastal_Waste_Risk]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Main Sources' datatype='string' name='[Main_Sources]' role='dimension' type='nominal' />
+      <column caption='Per Capita Waste KG' datatype='real' name='[Per_Capita_Waste_KG]' role='measure' type='quantitative' />
+      <column caption='Recycling Rate' datatype='real' name='[Recycling_Rate]' role='measure' type='quantitative' />
+      <column caption='Total Plastic Waste MT' datatype='real' name='[Total_Plastic_Waste_MT]' role='measure' type='quantitative' />
+      <column caption='Plastic Waste Around the World.csv' datatype='table' name='[__tableau_internal_object_id__].[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_0anuao10r08d8s19mqyt00kxaece.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2024 03:22:33 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Plastic Waste Around the World.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Plastic_Waste_MT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Plastic_Waste_MT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Plastic_Waste_MT</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Plastic Waste Around the World.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Main_Sources</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Main_Sources]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Main_Sources</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Plastic Waste Around the World.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recycling_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Recycling_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recycling_Rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Plastic Waste Around the World.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Per_Capita_Waste_KG</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Per_Capita_Waste_KG]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Per_Capita_Waste_KG</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Plastic Waste Around the World.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coastal_Waste_Risk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Coastal_Waste_Risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coastal_Waste_Risk</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Plastic Waste Around the World.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Plastic Waste Around the World.csv' id='Plastic Waste Around the World.csv_B63A00D6353741189DFC40DF4FFE1E65'>
+            <properties context=''>
+              <relation connection='textscan.0xfjbkj03olh2z1626yts0ebvi9e' name='Plastic Waste Around the World.csv' table='[Plastic Waste Around the World#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='real' name='Total_Plastic_Waste_MT' ordinal='1' />
+                  <column datatype='string' name='Main_Sources' ordinal='2' />
+                  <column datatype='real' name='Recycling_Rate' ordinal='3' />
+                  <column datatype='real' name='Per_Capita_Waste_KG' ordinal='4' />
+                  <column datatype='string' name='Coastal_Waste_Risk' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Plastic Waste Around the World' name='federated.1gct2pb1gaovkt1a0wtvp0evfx5m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gct2pb1gaovkt1a0wtvp0evfx5m'>
+            <column caption='Main Sources' datatype='string' name='[Main_Sources]' role='dimension' type='nominal' />
+            <column caption='Total Plastic Waste MT' datatype='real' name='[Total_Plastic_Waste_MT]' role='measure' type='quantitative' />
+            <column-instance column='[Main_Sources]' derivation='None' name='[none:Main_Sources:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_Plastic_Waste_MT]' derivation='Sum' name='[sum:Total_Plastic_Waste_MT:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[none:Main_Sources:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[sum:Total_Plastic_Waste_MT:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[sum:Total_Plastic_Waste_MT:qk]</rows>
+        <cols>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[none:Main_Sources:nk]</cols>
+      </table>
+      <simple-id uuid='{986191BD-A3EE-4E3E-8639-00AA80E3FB3C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[none:Main_Sources:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[sum:Total_Plastic_Waste_MT:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[none:Main_Sources:nk]</field>
+                  <field>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[sum:Total_Plastic_Waste_MT:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Consumer_Packaging&quot;</value>
+                <value>80.010000000000034</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[none:Country:nk]</field>
+            <field>[federated.1gct2pb1gaovkt1a0wtvp0evfx5m].[none:Main_Sources:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{D510A723-51F4-4B50-8AFF-A9C515F5081C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

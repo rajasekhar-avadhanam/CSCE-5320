@@ -1,0 +1,799 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/Project-5-1?rev=1.2' id='Project-5-1' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Age Bin Interval' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+        <members>
+          <member value='5' />
+          <member value='10' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='heart' inline='true' name='federated.1940kag04bw2fe12vvndj00mmzmu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='heart' name='textscan.146bv5g0qi8ud61gy1wtn1okt5ho'>
+            <connection class='textscan' directory='F:/UNT_Classes/Semester-4/Scientific Data Visualization/Projects/5' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.146bv5g0qi8ud61gy1wtn1okt5ho' name='heart.csv' table='[heart#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='integer' name='sex' ordinal='1' />
+            <column datatype='integer' name='cp' ordinal='2' />
+            <column datatype='integer' name='trestbps' ordinal='3' />
+            <column datatype='integer' name='chol' ordinal='4' />
+            <column datatype='integer' name='fbs' ordinal='5' />
+            <column datatype='integer' name='restecg' ordinal='6' />
+            <column datatype='integer' name='thalach' ordinal='7' />
+            <column datatype='integer' name='exang' ordinal='8' />
+            <column datatype='real' name='oldpeak' ordinal='9' />
+            <column datatype='integer' name='slope' ordinal='10' />
+            <column datatype='integer' name='ca' ordinal='11' />
+            <column datatype='integer' name='thal' ordinal='12' />
+            <column datatype='integer' name='target' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cp]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>cp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trestbps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trestbps]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>trestbps</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chol</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[chol]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>chol</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fbs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fbs]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>fbs</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>restecg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[restecg]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>restecg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thalach</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[thalach]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>thalach</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exang</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[exang]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>exang</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oldpeak</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oldpeak]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>oldpeak</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>slope</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[slope]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>slope</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ca</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ca]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>ca</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[thal]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>thal</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[target]</local-name>
+            <parent-name>[heart.csv]</parent-name>
+            <remote-alias>target</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (5 year-bin)' datatype='integer' name='[Age (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+      </column>
+      <column aggregation='None' caption='Age (10 year-bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+      </column>
+      <column caption='Age Bins' datatype='string' name='[Calculation_1356427933789122561]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(FLOOR([age] / [Parameters].[Parameter 1]) * [Parameters].[Parameter 1]) + &#13;&#10;&quot; - &quot; + &#13;&#10;STR((FLOOR([age] / [Parameters].[Parameter 1]) + 1) * [Parameters].[Parameter 1] - 1)' />
+      </column>
+      <column caption='Gender' datatype='string' name='[Calculation_297519071347412992]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [sex] = 0 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+      </column>
+      <column caption='heart.csv' datatype='table' name='[__tableau_internal_object_id__].[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Ca' datatype='integer' name='[ca]' role='measure' type='quantitative' />
+      <column caption='Chol' datatype='integer' name='[chol]' role='measure' type='quantitative' />
+      <column caption='Cp' datatype='integer' name='[cp]' role='measure' type='quantitative' />
+      <column caption='Exang' datatype='integer' name='[exang]' role='measure' type='quantitative' />
+      <column caption='Fbs' datatype='integer' name='[fbs]' role='measure' type='quantitative' />
+      <column caption='Oldpeak' datatype='real' name='[oldpeak]' role='measure' type='quantitative' />
+      <column caption='Restecg' datatype='integer' name='[restecg]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='integer' name='[sex]' role='measure' type='quantitative' />
+      <column caption='Slope' datatype='integer' name='[slope]' role='measure' type='quantitative' />
+      <column caption='Target' datatype='integer' name='[target]' role='measure' type='quantitative' />
+      <column caption='Thal' datatype='integer' name='[thal]' role='measure' type='quantitative' />
+      <column caption='Thalach' datatype='integer' name='[thalach]' role='measure' type='quantitative' />
+      <column caption='Trestbps' datatype='integer' name='[trestbps]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='F:/UNT_Classes/Semester-4/Scientific Data Visualization/Projects/5/Submission/Heart/2.twb Files/Data/TableauTemp/#TableauTemp_06dp92s0c7cwe11brkn5i1tut0yo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/02/2024 08:28:49 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sex</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sex</remote-alias>
+              <ordinal>1</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cp</remote-alias>
+              <ordinal>2</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trestbps</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trestbps]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trestbps</remote-alias>
+              <ordinal>3</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chol</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[chol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>chol</remote-alias>
+              <ordinal>4</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>152</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fbs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fbs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fbs</remote-alias>
+              <ordinal>5</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>restecg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[restecg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>restecg</remote-alias>
+              <ordinal>6</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thalach</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[thalach]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thalach</remote-alias>
+              <ordinal>7</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>exang</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[exang]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>exang</remote-alias>
+              <ordinal>8</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>oldpeak</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[oldpeak]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>oldpeak</remote-alias>
+              <ordinal>9</ordinal>
+              <family>heart.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>slope</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[slope]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>slope</remote-alias>
+              <ordinal>10</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ca</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ca</remote-alias>
+              <ordinal>11</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[thal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thal</remote-alias>
+              <ordinal>12</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>target</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>target</remote-alias>
+              <ordinal>13</ordinal>
+              <family>heart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Age Bin Interval' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='heart.csv' id='heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E'>
+            <properties context=''>
+              <relation connection='textscan.146bv5g0qi8ud61gy1wtn1okt5ho' name='heart.csv' table='[heart#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='age' ordinal='0' />
+                  <column datatype='integer' name='sex' ordinal='1' />
+                  <column datatype='integer' name='cp' ordinal='2' />
+                  <column datatype='integer' name='trestbps' ordinal='3' />
+                  <column datatype='integer' name='chol' ordinal='4' />
+                  <column datatype='integer' name='fbs' ordinal='5' />
+                  <column datatype='integer' name='restecg' ordinal='6' />
+                  <column datatype='integer' name='thalach' ordinal='7' />
+                  <column datatype='integer' name='exang' ordinal='8' />
+                  <column datatype='real' name='oldpeak' ordinal='9' />
+                  <column datatype='integer' name='slope' ordinal='10' />
+                  <column datatype='integer' name='ca' ordinal='11' />
+                  <column datatype='integer' name='thal' ordinal='12' />
+                  <column datatype='integer' name='target' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <repository-location derived-from='https://vizhub/workbooks/Project-5-1/Sheet1?rev=' id='109321276' path='/workbooks/Project-5-1' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart' name='federated.1940kag04bw2fe12vvndj00mmzmu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1940kag04bw2fe12vvndj00mmzmu'>
+            <column caption='Gender' datatype='string' name='[Calculation_297519071347412992]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [sex] = 0 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' pivot='key' type='quantitative' />
+            <column caption='heart.csv' datatype='table' name='[__tableau_internal_object_id__].[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_297519071347412992]' derivation='None' name='[none:Calculation_297519071347412992:nk]' pivot='key' type='nominal' />
+            <column caption='Sex' datatype='integer' name='[sex]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='863' />
+            <format attr='height' value='570' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Calculation_297519071347412992:nk]' />
+              <wedge-size column='[federated.1940kag04bw2fe12vvndj00mmzmu].[__tableau_internal_object_id__].[cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' />
+              <size column='[federated.1940kag04bw2fe12vvndj00mmzmu].[__tableau_internal_object_id__].[cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' />
+              <text column='[federated.1940kag04bw2fe12vvndj00mmzmu].[__tableau_internal_object_id__].[pcto:cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0249BDBE-4545-4113-956F-7B1E5240184C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <repository-location derived-from='https://vizhub/workbooks/Project-5-1/Sheet2?rev=' id='109324215' path='/workbooks/Project-5-1' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart' name='federated.1940kag04bw2fe12vvndj00mmzmu' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Age Bin Interval' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1940kag04bw2fe12vvndj00mmzmu'>
+            <column caption='Age Bins' datatype='string' name='[Calculation_1356427933789122561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(FLOOR([age] / [Parameters].[Parameter 1]) * [Parameters].[Parameter 1]) + &#13;&#10;&quot; - &quot; + &#13;&#10;STR((FLOOR([age] / [Parameters].[Parameter 1]) + 1) * [Parameters].[Parameter 1] - 1)' />
+            </column>
+            <column caption='heart.csv' datatype='table' name='[__tableau_internal_object_id__].[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1356427933789122561]' derivation='None' name='[none:Calculation_1356427933789122561:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1940kag04bw2fe12vvndj00mmzmu].[__tableau_internal_object_id__].[pcto:cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]</rows>
+        <cols>[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Calculation_1356427933789122561:nk]</cols>
+        <show-full-range>
+          <column>[federated.1940kag04bw2fe12vvndj00mmzmu].[Age (bin) 2]</column>
+          <column>[federated.1940kag04bw2fe12vvndj00mmzmu].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E972666A-AAEB-4DE0-9A19-212AA0D3DA6F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Calculation_297519071347412992:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1940kag04bw2fe12vvndj00mmzmu].[__tableau_internal_object_id__].[cnt:heart.csv_E6AE59E0BD1B4E0BAD1DDEB52CB8348E:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Calculation_297519071347412992:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0DF07029-2D0D-4142-A5A0-3294802E8B51}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Age (bin) 2:ok]</field>
+            <field>[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Age (bin):ok]</field>
+            <field>[federated.1940kag04bw2fe12vvndj00mmzmu].[none:Calculation_1356427933789122561:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A947F70D-8882-43CF-AE4E-C9BB20E2E0C5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAUKklEQVR4nO3dZ3Ac93nH8e/udZQ79N4IkiAJgiBIgqBYITYVqlGK43gi25InzosknuRF
+      4ncpM4kzeeFJMpO8iOPxxDOOIstyZEm0qUJJJCVKpEASIAEQJIRO4NB7v7qbF9RQkg0FK2nv
+      AGKfz6vD3eLuORx+99/y32cVXdd1hLAgRVEUdaWLEGIlSQCEpUkAhKVJAISl2Ve6ALG00b42
+      +uddbN9UjKIsv3zvR430DE/jcHupqKxAmRtiNJLEupyU2Bd7D5MRYDXSg5x98zQvvvgyQU0z
+      9CvnXnkRNXsdzpk2nvvNJRYmBukbmY5xofc+GQFWocDEICNaDvfl+GkcCrDNPcxPf/YKvpwU
+      BiYS+daxYk69ewPC81Q/8k12laQBCnaHnYWFRVJTfWizfdzoh9m65xlMrSTQeY3NJ76DcuM3
+      dEQSyU5fx4kT+3Gu9JtdYTICrEID7Q1MLWq4E1Q++KCJ7msXydh1gq+fPEh4OsCH595iTldw
+      2RX8/hEAdC1Ex80WxhZ03A4V0NE10DUbFffV8kDNRgZGp7E5nbjdSWwoW4ddjgBJAFYdPcqN
+      li6qd2+jYGctUy0XURMSmBkfJzg3RxBI8fkoKt/LN5/9Iw5szQdAtXnYU3uMw7s20tzSzuf9
+      b2+sOcKJfeW8+dILTATi9q5WLVkFWmV0HTI31FC1txKPonOidoKs7XvZcO4tztWHcTscHDz5
+      Tc6eeYeXT3ext7YWgPLqnXx46nmcriS+8/UHSAr0scuTREreXhKTnXiKt7BNzyAy082Fpi52
+      Hn6IVPcKv9lVQJGpEKvf9GgXb79Vx+z8NJsOPsnezdkrXdKaoCiKsqoCEIlEsNtlUBLxserm
+      Aq2iLAqLWFUBECLeJADC0iQAwtIkAMLSJADC0iQAwtIkAMLSJADC0iQAwtIkAMLSZOLNGhQ1
+      eBaZEQoKqmrgnMx7lARgDfqTfznN8MS8Kc9VmpfKv37vQVOeazWSVSBhaRIAYWkSAGFppgcg
+      GppneHz649sL9Pv9zC2GAZ2psSEmZhcBWJifI6rJ/H+xskwOgEbLlcucv1wPeoT6Sx8yMT3F
+      lbo6Zsb9XG/zc/NaA/OhRW60tGPevgohvhxTAzDZ20Y4YwOZCTZYHGMxMZ+K8q2UZDq53TNE
+      dukmcpOidHTcRosu0NLhN/PlhfjCTNsNGg1M09A+xNaKcgY755ifD2BzuUBRsLlceH2ZdDRd
+      JIKT7LQxIp48kqa78M8XkOOKous60WhUTos0g4l/Ql3XCYVC5j3hKmNaADRUcjJ9DPb7mZyc
+      ZDLqIDzaSyicz9jIJEVVFRw5nkNb8zVSM3x0Tzlwqja0KJ85Ed7hcJhVknWZeNxKURSczrXb
+      P860ADjcyWyt3IGua7gSEijIyccdWeDihQtklWwmLcGGHpqBxFyycjIZG7yKn3RqktfuUUax
+      +pl+JFhRVMo3bwYgo2Ajhws2fvKg08um9V4AynftNfulhfjC5DiAsDQJgLA0CYCwNAmAsDQJ
+      gLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCw
+      NAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNBMbY+lEwmFCoTCqw4nL6SASChAKR1FUFbfbTSQY
+      QLc5cDnsRCJhVJsdVZHOcGLlmBcAPUJb03WmghHmZmfZvu8oHZfPoHsycXmS2FKSyaX6W9hs
+      bvYe3MWN+kYqq6tx2UyrQIgvzLxVIMVB+a4a9uzeSZbPSTi6yNxslISERAqL1xGdHqOgoppi
+      X5jOzttgt+EfHDPt5YX4MkztDTo/3k/d1SbCzhTKkhLZd//9BENBWhouUlZZwe36D9AVB9kZ
+      w8xHfThvtzCccT/p9oi0RzeTtEc3zLwAaFFsSRkcfuAhhjoaaOsaYX2+j3Svj6xUD0E1lQcf
+      epDum9dxJSWgBbxkRmdZCGhkp0h7dFNJe3TDTAxAmNbGq4zPBLC5kti5I4nOm9cYm1rAk5pD
+      TZoHPTzNnJJCaUEuQ3V1tOle9m2RHVFi5ZgXALubqpoDn7mrave+zy7j9FFZ7gNg175a015a
+      iC9Lvn6FpUkAhKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISlSQCE
+      pUkAhKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISlmRgAnbH+Li5d
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
